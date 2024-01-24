@@ -6,7 +6,7 @@ public class App {
 
         // Objekt erzeugen
         Cat cat = new Cat(); 
-        System.out.println(cat);
+        output("Adresse des Objekts: " + cat);
 
         // Wertzuweisung
         cat.name = "Alonzo";
@@ -14,14 +14,14 @@ public class App {
         cat.age = 35;
 
         // Ausgabe
-        System.out.println(cat.tellYourName());
-        System.out.println(cat.tellYourFurColor());
-        System.out.println(cat.tellYourAge());
+        output(cat.tellYourName());
+        output(cat.tellYourFurColor());
+        output(String.valueOf(cat.tellYourAge()));  // int --> String
 
-        System.out.println("---------------");
+        output("---------------");
 
         Cat cat2 = new Cat();
-        System.out.println(cat2);
+        output("Adresse des Objekts: " + cat2);
       
         // Wertzuweisung
         cat2.name = "Grizabella";
@@ -29,15 +29,21 @@ public class App {
         cat2.age = 29;
 
         // Ausgabe
-        System.out.println(cat2.tellYourName());
-        System.out.println(cat2.tellYourFurColor());
-        System.out.println(cat2.tellYourAge());
+        output(cat2.tellYourName());
+        output(cat2.tellYourFurColor());
+        output(Integer.toString(cat2.tellYourAge()));  // int --> String
         
 
 
     }
 
-   
+   // statische Methode --- in Klasse
+    public static void output(String outputStr){
+        System.out.println(outputStr);
+    }
+      
+
+
 
 }
 
