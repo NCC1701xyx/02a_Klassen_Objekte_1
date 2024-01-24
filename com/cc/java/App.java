@@ -32,8 +32,6 @@ public class App {
         output(cat2.tellYourName());
         output(cat2.tellYourFurColor());
         output(Integer.toString(cat2.tellYourAge()));  // int --> String
-        
-
 
     }
 
@@ -42,8 +40,6 @@ public class App {
         System.out.println(outputStr);
     }
       
-
-
 
 }
 
