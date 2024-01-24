@@ -7,12 +7,20 @@ public class Cat {
     int age;
 
 
-
-    
-    public void tellYourName(){
-        System.out.println(this.name);
+    public String tellYourName(){
+        return this.name;
     }
     
+    public String tellYourFurColor(){
+        return this.furColor;
+    }
+
+    public int tellYourAge(){
+        return this.age;
+    }
+
+
+
     public void tellYourAddress(){
         System.out.println(this);
     }
