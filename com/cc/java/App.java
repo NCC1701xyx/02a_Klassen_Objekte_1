@@ -5,13 +5,7 @@ public class App {
     public static void main(String[] args) {
 
         // Objekt erzeugen
-        Cat cat = new Cat(); 
-        output("Adresse des Objekts: " + cat);
-
-        // Wertzuweisung
-        cat.name = "Alonzo";
-        cat.furColor = "grey";
-        cat.age = 35;
+        Cat cat = new Cat("Alonzo", "grey", 35); 
 
         // Ausgabe
         output(cat.tellYourName());
@@ -20,13 +14,7 @@ public class App {
 
         output("---------------");
 
-        Cat cat2 = new Cat();
-        output("Adresse des Objekts: " + cat2);
-      
-        // Wertzuweisung
-        cat2.name = "Grizabella";
-        cat2.furColor = "white";
-        cat2.age = 29;
+        Cat cat2 = new Cat("Grizabella", "white", 29);
 
         // Ausgabe
         output(cat2.tellYourName());
